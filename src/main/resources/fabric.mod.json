@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "notenoughtime",
+  "version": "${version}",
+  "name": "NotEnoughTime",
+  "description": "Fabric playtime mod",
+  "authors": [
+    "Azuyamat"
+  ],
+  "contact": {
+    "website": "https://azuyamat.com",
+    "repo": "https://github.com/Azuyamat/notenoughtime"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/notenoughtime/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.azuyamat.notenoughtime.client.NotEnoughTimeClient"
+    ],
+    "main": [
+      "com.azuyamat.notenoughtime.NotEnoughTime"
+    ]
+  },
+  "mixins": [
+    "notenoughtime.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
